@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>
+
+        Sugestões
+    </title>
+
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <nav class="navbar fixed-top navbar-white bg-white">
+        <a href="paginaprincipal.html" class="navbar-brand">Página Inicial</a>
+        <a href="professores.html" class="navbar-brand">Professores</a>
+        <a href="sugestoes.html" class="navbar-brand">Sugestões</a>
+    
+    <form class="form-inline">
+        <div class="login">
+            <input type="text" class="form-control mr-2" id="login" placeholder="Usuário">
+        </div>
+        <div class="senha">
+            <input type="password" class="form-control mr-2" id="senha" placeholder="Senha">
+        </div>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input">
+                Lembrar
+            </label>
+            
+        </div>
+        <button type="submit" class="btn btn-dark" >Entrar</button>
+        
+    </form>
+    </nav>
+    <header class="text-center">
+        <a href="paginaprincipal.html">
+        <img src="logo_maua.png"  width="300" style="margin-top: 100px">
+        </a>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="paginaprincipal.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Sugestões</li>
+            </ol>
+        </nav>
+        <h1>Instituto Mauá de Tecnologia</h1>
+        <img src="sugestoes.jpg" width="300">
+    </header>
+    <h2>Sugestões</h2>
+    <form class="form-group">
+        <div class="nome">
+            <label for="">Nome completo</label>
+            <input type="text" class="form-control" placeholder="Nome Completo">
+        </div>
+        <div class="matriculado">
+            <input class="matriculado" type="checkbox">
+            <label class="aluno">Sou aluno da Mauá</label>
+        </div>
+        <div class="email">
+            <label for="">E-mail</label>
+            <input type="email" class="form-control" placeholder="nome@email.com.br">
+        </div>
+        <div class="form-group">
+            <label for="">Sugestão</label>
+            <textarea class="form-control" placeholder="Escreva sua sugestão" rows="6"></textarea>
+        </div>
+        <button class="btn btn-primary" type="button">Enviar</button>
+    </form>
+        
+    <footer>
+
+        <strong>Para mais informações, <a href="https://maua.br/graduacao/engenharia-computacao/"
+                target="_blank">clique aqui</a>.</strong>
+    </footer>
+</body>
+
+</html>
