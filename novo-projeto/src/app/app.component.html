@@ -1,0 +1,44 @@
+<nav [ngClass]="{'zero': cor==false, 'um': cor==true}" class="navbar fixed-top">
+  <a routerLink="/"[ngClass]="{'zero': cor==false}" class="navbar-brand">Página Inicial</a>
+  <a routerLink="/professores"[ngClass]="{'zero': cor==false}" class="navbar-brand">Professores</a>
+  <a routerLink="/sugestoes"[ngClass]="{'zero': cor==false}" class="navbar-brand">Sugestões</a>
+  <a routerLink="/alunos"[ngClass]="{'zero': cor==false}" class="navbar-brand">Alunos</a>
+
+  <form class="form-inline" [ngClass]="{'zero': cor==false, 'um': cor==true}">
+      <div class="login">
+          <input type="text" class="form-control mr-2" id="login" placeholder="Usuário">
+      </div>
+      <div class="senha">
+          <input type="password" class="form-control mr-2" id="senha" placeholder="Senha">
+      </div>
+      <div class="form-check form-check-inline">
+          <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              Lembrar
+          </label>
+
+      </div>
+      <button class="botao-login" type="submit" [ngClass]="{'zero': cor==true, 'um': cor==false}">Entrar</button>
+
+  </form>
+</nav>
+
+<header [ngClass]="{'zero': cor==false, 'um': cor==true}" class="text-center">
+  <a routerLink="/">
+      <img class="logo" src="assets/logo_maua.png" width="300" style="margin-top: 100px">
+  </a>
+  <h1>Instituto Mauá de Tecnologia</h1>
+</header>
+
+<router-outlet>
+
+</router-outlet>
+
+<footer [ngClass]="{'zero': cor==false, 'um': cor==true}">
+  <strong>Para mais informações, <a href="https://maua.br/graduacao/engenharia-computacao/" target="_blank">clique
+          aqui</a>.</strong>
+</footer>
+
+<button class="button" [ngClass]="{'zero': cor==true, 'um': cor==false}" (click)=gerarCor()>{{mensagem}}</button>
+
+

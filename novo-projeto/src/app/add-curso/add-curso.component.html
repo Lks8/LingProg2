@@ -1,0 +1,11 @@
+
+
+<div class="curso">
+    <label for="cursoInput">Para adicionar um novo curso, preencha os dados a seguir:</label>
+    <input type="text"  class="form-control" id="nomeInput" placeholder="Nome do curso"  #nomeInput>
+    <input type="text" class="form-control" id="descricaoInput" placeholder="Descrição"  #descricaoInput>
+    <input type="text" class="form-control" id="imagemInput" placeholder="URL da imagem" #imagemInput>
+    <input type="text" class="form-control" id="legendaInput" placeholder="Legenda da imagem" #legendaInput>
+    <button type="button" class="btn btn-primary btn-block" (click)="add(nomeInput.value,descricaoInput.value,imagemInput.value,legendaInput.value)" value="Reset form">
+    Adicionar curso</button>
+</div>

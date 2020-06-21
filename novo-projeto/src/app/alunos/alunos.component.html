@@ -1,0 +1,47 @@
+<div class="container">
+    <!-- {{pessoa | json}} -->
+    <!-- {{pessoas | json}} -->
+    <form #pessoaForm="ngForm" (ngSubmit)="salvar(pessoaForm)">
+        <div class="row">
+            <div class="form-group col-12">
+                <label for="nomeInput">Nome</label>
+                <input type="text" placeholder="Nome" class="form-control p-4" name="nome" ngModel>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="IdadeInput">Idade</label>
+                <input type="text" placeholder="Idade" class="form-control p-4" name="idade" ngModel>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="emailInput">Email</label>
+                <input type="text" placeholder="E-mail" class="form-control p-4" name="email" ngModel>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="cursoInput">Curso</label>
+                <select name="" id="cursoInput" class="form-control" name="curso" ngModel>
+                    <option value="">Selecione</option>
+                    <option *ngFor="let c of curso">{{c}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="row">
+    <div  class="card-deck">
+        <div *ngFor="let p of pessoas" class="card">
+            <div class="card-body">
+                <h5  class="card-title">{{p.nome}}</h5>
+                <h6  class="card-subtitle mb-2 text-muted">{{p.idade}}</h6>
+                <p  class="card-text">{{p.email}}</p>
+                <p  class="card-text">{{p.curso}}</p>
+            </div>
+        </div>
+    </div>
+</div>
